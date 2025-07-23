@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario - PixelPioneer</title>
+  <link rel="stylesheet" href="../CSS/index4.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <img src="../IMG/fondo1.jpg" class="main-img" alt="Gamepad">
+  <div class="contenedor-formulario">
+    <h2>Agrega tus datos personales</h2>
+    <p class="nota"><small>🔒 Todos los datos se cifrarán<br>Privacidad garantizada por PixelPioneer</small></p>
+    
+    <form id="registroForm">
+      <div class="fila">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="pais" placeholder="País/región">
+      </div>
+
+      <div class="fila">
+        <input type="text" name="apellidos" placeholder="Apellidos" required>
+        <input type="text" name="departamento" placeholder="Departamento">
+      </div>
+
+      <div class="fila">
+        <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento">
+        <input type="text" name="municipio" placeholder="Municipio">
+      </div>
+
+      <div class="fila">
+        <input type="tel" name="telefono" placeholder="Número de teléfono">
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+      </div>
+
+      <div class="fila">
+        <input type="password" name="password" placeholder="password" style="width: 100%;" required>
+      </div>
+      <p class="label-tarjeta">Seleccione su tarjeta</p>
+      <div class="tarjetas">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Davivienda_logo.svg" alt="Davivienda" data-tarjeta="davivienda">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Banco_Agricola_logo.svg" alt="BancoAgrícola" data-tarjeta="banco_agricola">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Banco_Cuscatlan_logo.svg" alt="Cuscatlán" data-tarjeta="cuscatlan">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Banco_Promerica_logo.svg" alt="Promerica" data-tarjeta="promerica">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" data-tarjeta="paypal">
+      </div>
+      <input type="hidden" name="tarjetaSeleccionada" id="tarjetaSeleccionada">
+
+      <div class="fila">
+        <input type="text" name="numeroTarjeta" placeholder="Número tarjeta" style="width: 100%;">
+      </div>
+
+      <div class="check">
+        <input type="checkbox" id="guardar-datos" name="guardarDatos" checked>
+        <label for="guardar-datos">Desea que usemos estos datos para sus futuras compras</label>
+      </div>
+
+      <div class="botones">
+        <button type="reset" class="btn-cancelar">Cancelar</button>
+        <button type="submit" class="btn-guardar">Guardar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="../js/index4.js"></script>
+</body>
+</html>

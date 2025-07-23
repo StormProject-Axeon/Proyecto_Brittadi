@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  background: linear-gradient(120deg, #161c38 70%, #232957 100%);
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #eaf2ff;
+  min-height: 100vh;
+}
+.main-img {
+  position: absolute;
+    top: 0; left: 0; width: 100%; height: 800px;
+        background: rgba(0,0,0,0.3);
+        z-index: -2;
+}
+
+.upload-btn {
+  background: #384379;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 18px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 0.97em;
+  transition: background 0.2s;
+}
+.upload-btn:hover {
+  background: #5162cc;
+}
+
+
+.profile-container {
+  max-width: 900px;
+  margin: 32px auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 48px #1f297c48;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-banner {
+  position: relative;
+  background: #23284a;
+  height: 220px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+  filter: brightness(0.64);
+}
+
+.profile-avatar {
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+  border-radius: 50%;
+  border: 5px solid #23284a;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  background: #384360;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-username {
+  position: absolute;
+  left: 138px;
+  bottom: 26px;
+  color: #66d6ef;
+  font-size: 1.25em;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  text-shadow: 1px 2px 12px #001825aa;
+}
+
+.profile-actions {
+  position: absolute;
+  right: 24px;
+  bottom: 31px;
+  display: flex;
+  gap: 17px;
+}
+
+.privacy-btn,
+.edit-btn {
+  background: #384379;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 18px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 0.97em;
+  transition: background 0.2s;
+}
+.privacy-btn:hover,
+.edit-btn:hover {
+  background: #5162cc;
+}
+
+.profile-stats {
+  display: flex;
+  position: absolute;
+  left: 30px;
+  top: 17px;
+  gap: 30px;
+  font-size: 1em;
+  color: #fffbe9;
+  font-weight: 500;
+}
+
+.profile-tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  border-radius: 0 0 14px 14px;
+  padding: 6px 0 0 0;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #c5cdf8;
+  font-size: 1.06em;
+  padding: 11px 22px 8px 22px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: color 0.18s, border-color 0.2s;
+}
+.tab.active,
+.tab:hover {
+  color: #7fc7fe;
+  border-bottom: 3px solid #45d6fe;
+}
+
+.profile-description {
+  padding: 76px 40px 18px 40px;
+}
+
+.profile-description h3 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  letter-spacing: 0.12em;
+}
+
+.description-box {
+  background: rgba(36, 38, 80, 0.96);
+  border-radius: 16px;
+  padding: 28px 22px;
+  box-shadow: 0 2px 22px #00c79725;
+  font-size: 1.13em;
+  color: #eaf2ff;
+  line-height: 1.7;
+}
+
+.description-box strong {
+  color: #76e8e6;
+  font-weight: 700;
+}
+
+.hashtags {
+  display: block;
+  margin-top: 12px;
+  color: #75e9fb;
+  font-size: 0.98em;
+  font-style: italic;
+}
+
+.profile-actions-bottom {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  padding: 16px 38px 28px 38px;
+  border-top: 1px solid #282d4d;
+}
+
+.logout-btn,
+.delete-btn {
+  border: none;
+  font-size: 1em;
+  border-radius: 22px;
+  padding: 11px 26px;
+  font-weight: 700;
+  margin: 0;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+.logout-btn {
+  background: #454775;
+  color: #fff;
+}
+
+.logout-btn:hover {
+  background: #5179a2;
+}
+
+.delete-btn {
+  background: #231f4b;
+  color: #f87e7e;
+  border: 2px solid #fb8b8b54;
+}
+
+.delete-btn:hover {
+  background: #f75555;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .profile-container {
+    max-width: 98vw;
+    margin: 4vw auto;
+  }
+  .profile-description {
+    padding: 58px 13px 10px 13px;
+  }
+  .profile-actions-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 6px 17px 7px;
+  }
+  .profile-avatar {
+    width: 70px;
+    height: 70px;
+    left: 12px;
+    bottom: -36px;
+  }
+  .profile-username {
+    left: 88px;
+    bottom: 18px;
+    font-size: 1em;
+  }
+  .profile-actions {
+    right: 10px;
+    bottom: 12px;
+    gap: 8px;
+  }
+  .profile-tabs {
+    gap: 8px;
+    font-size: 0.95em;
+  }
+  .profile-stats {
+    left: 10px;
+    top: 7px;
+    font-size: 0.93em;
+    gap: 16px;
+  }
+}

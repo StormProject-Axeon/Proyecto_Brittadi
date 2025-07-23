@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1612832021084-7d1d83f44d38') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+.main-img {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 730px;
+  background: rgba(0,0,0,0.3);
+  z-index: -1;
+  background-attachment: fixed;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: brightness(0.6);
+}
+
+.login-box {
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+.bienvenida {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.titulo {
+  font-size: 50px;
+  font-weight: 200;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.campo {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background-color: rgba(0, 123, 255, 1);
+}
+
+.texto-secundario {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.crear-cuenta {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+.crear-cuenta:hover {
+  text-decoration: underline;
+}

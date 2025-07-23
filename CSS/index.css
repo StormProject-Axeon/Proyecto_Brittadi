@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #181a2a 70%, #310059 100%);
+  min-height: 100vh;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111732;
+  padding: 10px 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 12px;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 20px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.nav-links {
+  margin-top: 10px;
+  margin-left: 1170px;
+  display: flex;
+  align-items: end;
+  gap: 15px;
+}
+
+.btn-cta {
+  background: #0111BD;
+  color: #fff;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn-cta:hover {
+  background: #353450;
+}
+
+.btn-secondary {
+  background: #0111BD;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #353450;
+}
+
+.user-icon,
+.menu-icon {
+  font-size: 2rem;
+  color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.header-section {
+  position: relative;
+  padding: 70px 30px 30px 30px;
+  background: url('bg-abstract.jpg') center/cover no-repeat;
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bienvenido {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #67c4fd;
+}
+
+.a-pixelpioner {
+  font-size: 2.4rem;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.description {
+  max-width: 600px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #d7e5ff;
+  margin-bottom: 32px;
+}
+
+.main-img {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 800px;
+  background: rgba(0,0,0,0.3);
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+/* seccion de como funciona */
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: linear-gradient(110deg, #061a16 30%, #15052b 100%);
+  color: #fff;
+}
+
+.funciona-section {
+  min-height: 100vh;
+  padding: 40px 0;
+  background: url('fondo-abstracto.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.funciona-section h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0;
+  color: #e4eaff;
+  letter-spacing: 0.04em;
+  margin-bottom: 48px;
+}
+
+.funciona-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.funciona-box {
+  background: rgba(14, 17, 38, 0.84);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(34, 43, 80, 0.25);
+  padding: 38px 28px 28px 28px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.funciona-box:hover {
+  transform: translateY(-8px) scale(1.035);
+  box-shadow: 0 8px 28px rgba(65, 69, 170, 0.22);
+}
+
+.funciona-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Isona de las imagenes */
+.price {
+  background-image: url('icono-precio.svg');
+}
+
+.console {
+  background-image: url('icono-console.svg');
+}
+
+.secure {
+  background-image: url('icono-seguro.svg');
+}
+
+.quality {
+  background-image: url('icono-quality.svg');
+}
+
+/* TIPOGRAFÍA Y COLORES */
+.funciona-box h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 12px 0;
+}
+
+.funciona-box p {
+  font-size: 1.1rem;
+  color: white;
+  margin: 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #002366, #0047ab); /* azul degradado */
+  padding: 10px 20px;
+  color: white;
+}
+
+.footer .social a {
+  margin-right: 10px;
+}
+
+.footer .social img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.footer .social img:hover {
+  transform: scale(1.1);
+}
+
+.footer .copy {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .funciona-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .funciona-box {
+    width: 90%;
+    max-width: 420px;
+  }
+}
